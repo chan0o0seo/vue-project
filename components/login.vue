@@ -59,8 +59,8 @@
           <v-btn block color="primary" rounded="lg" size="large" type="submit" variant="flat"> 로그인</v-btn>
       </v-form>
       <div class="link-wrap">
-          <RouterLink>회원가입</RouterLink>
-          <RouterLink>아이디 찾기·비밀번호 변경</RouterLink>
+        <RouterLink  class="txt-link">회원가입</RouterLink>
+        <RouterLink  class="txt-link">아이디 찾기·비밀번호 변경</RouterLink>
       </div>
   </div>
   <!-- 잉카인터넷 NOS 모듈 -->
@@ -91,82 +91,5 @@ const accRules = [
 ]
 </script>
 <style scoped>
-.login {
-    position: relative;
-    max-width: 58.8rem;
-    margin: 0 auto;
-    padding: 0;
-}
-.login .login-header {
-    position: relative;
-    width: 100%;
-    margin-bottom: 4rem;
-}
-.login .login-header .h-title {
-    font-family: OneShinhan,sans-serif;
-    font-size: 4rem;
-    font-weight: 700;
-    color: #111518;
-    text-align: center;
-}
-.login .form-group {
-    margin-bottom: 2.4rem;
-}
-.login .form-group .v-label {
-    margin-bottom: .8rem;
-    font-size: 1.8rem;
-}
-.v-label {
-    font-size: 1rem;
-    line-height: 150%;
-    font-weight: 500;
-    --v-medium-emphasis-opacity: 1;
-    color: rgb(var(--v-theme-lightText));
-}
-.login .form-group .v-input--density-comfortable {
-    --v-input-control-height: 6.4rem;
-    --v-input-padding-top: 1.2rem;
-}
-.v-checkbox .v-selection-control {
-    min-height: var(--v-input-control-height);
-}
-
-@media only screen and (max-width: 960px) {
-    .login {
-        width: 100%;
-        padding: 0 2.4rem;
-    }
-}
-@media only screen and (max-width: 960px) {
-    .login .login-header {
-        margin-bottom: 2.4rem;
-    }
-}
-@media only screen and (max-width: 960px) {
-    .login .login-header .h-title {
-        font-size: 2rem;
-    }
-}
-@media only screen and (max-width: 960px) {
-    .login .form-group {
-        margin-bottom: 1.6rem;
-    }
-}
-
-@media only screen and (max-width: 960px) {
-    .login .form-group .v-label, .login .form-group .v-text-field input {
-        font-size: 1.6rem;
-    }
-}
-@media only screen and (max-width: 960px) {
-    .v-label {
-        font-size: 1.4rem;
-    }
-}
-@media only screen and (max-width: 960px) {
-    .login .form-group .v-input--density-comfortable {
-        --v-input-control-height: 3rem;
-    }
-}
-
+@import '../styles/login.css'
 </style>

@@ -28,6 +28,7 @@ body {
   text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
 }
+
 body, input, textarea, select, button, table, pre {
   font-weight: 400;
   color: #111518;
@@ -61,6 +62,21 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+}
+
+input, textarea, select, button, table {
+  font-size: 1.6rem !important;
+  border: 0 none;
+  background-color: transparent;
+}
+[class*=icon-] {
+  --v-icon-size: 2.4rem;
+  --v-icon-size-medium: 2.8rem;
+  --v-icon-size-large: 3.2rem;
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: 0;
+  background-size: cover;
 }
 .v-btn__overlay {
   transition: none;
@@ -99,11 +115,69 @@ button {
 .v-btn--variant-text .v-btn__overlay {
   background-color: transparent;
 }
-
+.login .form-checkbox .check-all .v-selection-control__input:before {
+  background-color: transparent;
+}
+.login .form-checkbox .check-all .v-selection-control__input>.v-icon {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.login .form-checkbox .check-all .mdi-checkbox-blank-outline:before {
+  content: "";
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url("data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='12'%20cy='12'%20r='11.5'%20fill='white'%20stroke='%23CCCCCC'/%3e%3cpath%20d='M6.5%2011L10.8043%2015.5L17.5%208.5'%20stroke='%23CCCCCC'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e");
+  background-size: 100%;
+}
+.login .form-checkbox .check-all .mdi-checkbox-marked:before {
+  content: "";
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url("data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='12'%20cy='12'%20r='12'%20fill='%23356CFF'/%3e%3cpath%20d='M6.5%2011L10.8043%2015.5L17.5%208.5'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e");
+  background-size: 100%;
+}
+.mdi-checkbox-marked:before {
+    content: "󰄲";
+}
+.mdi:before, .mdi-set {
+  display: inline-block;
+  font: 24px/1 Material Design Icons;
+  font-size: inherit;
+  text-rendering: auto;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+input, textarea, div[contenteditable=true], code {
+  -webkit-text-size-adjust: text;
+  -ms-user-select: text;
+  -moz-user-select: -moz-text;
+  -webkit-user-select: text;
+  user-select: text;
+}
+.login .form-checkbox .v-checkbox .v-label {
+  margin: 0 0 0 .8rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
 
 /*media query*/
 @media (min-width: 960px) and (max-width: 1279px) {
   html {
       font-size: .7813vw !important;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .login .form-checkbox .check-all .v-selection-control__input, .login .form-checkbox .check-all .v-selection-control__wrapper {
+      width: 2.4rem;
+      height: 2.4rem;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .login .form-checkbox .v-checkbox .v-label {
+      margin-top: -.1rem;
+      margin-left: .4rem;
+      font-size: 1.4rem;
   }
 }

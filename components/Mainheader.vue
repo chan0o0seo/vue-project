@@ -15,7 +15,7 @@ const handleMouseLeave = () => {
       <div class="head-inner">
           <div class="out-login-wrap">
               <button class="btn-daram" type="button">
-                  DataBada
+                  Quedoc
               </button>
               <ul>
                   <li>
@@ -36,89 +36,68 @@ const handleMouseLeave = () => {
               </h1>
               <nav  :class="show ? 'active' : ''" class="gnb-menu" @click="show = true" @mouseleave="handleMouseLeave">
                   <ul class="menu-list">
-                      <li><a href="javascript:;">Data서비스</a></li>
-                      <li><a href="javascript:;">솔루션서비스</a></li>
-                      <li><a href="javascript:;">광고서비스</a></li>
-                      <li><a href="javascript:;">API서비스</a></li>
+                      <li><a href="javascript:;">소개</a></li>
+                      <li><a href="javascript:;">병원찾기</a></li>
                       <li><a href="javascript:;">커뮤니티</a></li>
                   </ul>
                   <div class="gnb-menu-wrap">
                       <div class="gnb-menu-inner">
                           <div class="gnb-menu-list">
-                              <h2 class="title"><span class="title-link">Data서비스</span></h2>
+                              <h2 class="title"><span class="title-link">소개</span></h2>
                               <ul class="dep1-list">
                                   <li class="item">
                                       <RouterLink
                                           
                                           @click.stop="show = false"
-                                          >Data상품
+                                          >Quedoc 소개
                                       </RouterLink>
                                   </li>
                                   <li class="item">
                                       <RouterLink 
-                                          >맞춤Data
-                                      </RouterLink>
-                                  </li>
-                              </ul>
-                          </div>
-                          <div class="gnb-menu-list">
-                              <h2 class="title"><span class="title-link">솔루션서비스</span></h2>
-                              <ul class="dep1-list">
-                                  <li class="item">
-                                      <RouterLink
-                                          @click.stop="show = false"
-                                          >솔루션상품
-                                      </RouterLink>
-                                  </li>
-                              </ul>
-                          </div>
-                          <div class="gnb-menu-list">
-                              <h2 class="title"><a class="title-link" href="javascript:;">광고서비스</a></h2>
-                              <ul class="dep1-list">
-                                  <li class="item">
-                                      <RouterLink
-                                          >타겟마케팅
-                                      </RouterLink>
-                                  </li>
-                                  <li class="item">
-                                      <RouterLink
-                                          >모바일서베이
+                                          >인삿말
                                       </RouterLink>
                                   </li>
                                   <li class="item">
                                       <RouterLink 
-                                          >SOL페이배너광고
+                                          >만든이
                                       </RouterLink>
                                   </li>
                               </ul>
                           </div>
                           <div class="gnb-menu-list">
-                              <h2 class="title"><span class="title-link">API서비스</span></h2>
+                              <h2 class="title"><span class="title-link">병원찾기</span></h2>
                               <ul class="dep1-list">
                                   <li class="item">
                                       <RouterLink
-                                          
                                           @click.stop="show = false"
-                                          >API상품
+                                          >병원종류로 찾기
+                                      </RouterLink>
+                                  </li>
+                                  <li class="item">
+                                      <RouterLink
+                                          @click.stop="show = false"
+                                          >진료과목으로 찾기
+                                      </RouterLink>
+                                  </li>
+                                  <li class="item">
+                                      <RouterLink
+                                          @click.stop="show = false"
+                                          >지역으로 찾기
                                       </RouterLink>
                                   </li>
                               </ul>
                           </div>
                           <div class="gnb-menu-list">
-                              <h2 class="title"><span class="title-link">커뮤니티</span></h2>
+                              <h2 class="title"><a class="title-link" href="javascript:;">커뮤니티</a></h2>
                               <ul class="dep1-list">
                                   <li class="item">
                                       <RouterLink
-                                         
-                                          @click.stop="show = false"
-                                          >활용장
+                                          >병원후기
                                       </RouterLink>
                                   </li>
                                   <li class="item">
                                       <RouterLink
-                                         
-                                          @click.stop="show = false"
-                                          >토론장
+                                          >소통해요
                                       </RouterLink>
                                   </li>
                               </ul>
