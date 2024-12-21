@@ -1,0 +1,109 @@
+
+html {
+  font-family: Inter var;
+  line-height: 1.5;
+  font-size: 1rem;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  word-break: normal;
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+html {
+  font-size: 62.5% !important;
+}
+body {
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+}
+body, input, textarea, select, button, table, pre {
+  font-weight: 400;
+  color: #111518;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+body, div, p, span, h1, h2, h3, h4, h5, h6, a, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select, label, header, footer, main, article, aside, section, address {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+a {
+  display: block;
+  color: #111518;
+  text-decoration: none;
+}
+ul, ol {
+  list-style: none;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.v-btn__overlay {
+  transition: none;
+}
+.v-input__control {
+    width: 100%;
+}
+
+.login .form-checkbox .check-all .v-selection-control {
+  width: 100%;
+}
+
+
+
+
+
+/* v- */
+.v-main.container {
+  flex: unset;
+  margin: 0;
+  padding: 6.4rem 0 16rem;
+}
+.v-application.wrap .head-inner, .v-footer.footer .foot-inner, .v-main.container .ly-inner {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.login .form-checkbox .check-all .v-selection-control__wrapper {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.login .form-checkbox .check-all .v-selection-control__input {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.v-btn--variant-text .v-btn__overlay {
+  background-color: transparent;
+}
+
+
+/*media query*/
+@media (min-width: 960px) and (max-width: 1279px) {
+  html {
+      font-size: .7813vw !important;
+  }
+}
