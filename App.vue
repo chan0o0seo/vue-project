@@ -1,7 +1,9 @@
 
 
 <script setup>
-import Hello from './components/Mainheader.vue'
+import Header from './components/MainHeader.vue'
+import Footer from './components/MainFooter.vue'
+import GoTopBtn from './components/GoTopBtn.vue'
 import { useDisplay } from 'vuetify';
 import { computed } from 'vue';
 const { name } = useDisplay();
@@ -24,12 +26,14 @@ const displaySize = computed(() => {
 
 <template>
   <v-app>
-    <Hello />
+    <Header />
     <v-main class="container">
       <div class="ly-inner">
         <router-view :class="displaySize"></router-view>
         </div>
       </v-main>
+      <Footer />
+      <GoTopBtn />
   </v-app>
 </template>
 

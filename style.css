@@ -52,6 +52,7 @@ a {
 ul, ol {
   list-style: none;
 }
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -77,6 +78,9 @@ input, textarea, select, button, table {
   background-position-x: 0;
   background-position-y: 0;
   background-size: cover;
+}
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
 }
 .v-btn__overlay {
   transition: none;

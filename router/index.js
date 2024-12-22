@@ -1,6 +1,6 @@
 import { createMemoryHistory, createRouter } from 'vue-router'
 
-import Header from '../components/login.vue'
+import Header from '../components/Login.vue';
 
 const routes = [
   { path: '/', component : Header},   
