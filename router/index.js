@@ -1,14 +1,15 @@
 import { createMemoryHistory, createRouter } from 'vue-router'
-
-import Header from '../components/Login.vue';
+import Login from '../components/login.vue'
+import Main from '../components/MainPage/MainPage.vue'
 
 const routes = [
-  { path: '/', component : Header},   
-]
+  { path: '/', component: Main, name: "main" },
+  { path: '/login', component: Login, name: 'login' },
+];
 
-const router = createRouter({// -> for browser history
+const router = createRouter({
   history: createMemoryHistory(), //createWebHistory(), -> for browser history
-  routes, 
+  routes,
 })
 
-export default router; 
+export default router
