@@ -56,7 +56,7 @@
                   label="아이디 저장"
               ></v-checkbox>
           </div>
-          <v-btn block color="primary" rounded="lg" size="large" type="submit" variant="flat"> 로그인</v-btn>
+          <v-btn block color="primary" rounded="lg" size="large" type="submit" variant="flat" to="/memtype"> 로그인</v-btn>
       </v-form>
       <div class="link-wrap">
         <RouterLink  class="txt-link">회원가입</RouterLink>
