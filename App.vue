@@ -4,8 +4,13 @@
 import Header from './components/MainHeader.vue'
 import Footer from './components/MainFooter.vue'
 import GoTopBtn from './components/GoTopBtn.vue'
+import AppMain from './components/AppMain.vue'
+import appLogin from './components/appLogin.vue'
 import { useDisplay } from 'vuetify';
-import { computed } from 'vue';
+import { computed, reactive } from 'vue';
+import AppLogin from './components/appLogin.vue'
+import BasePupAlert from './base/BasePupAlert.vue'
+import BasePupConfirm from './base/BasePupConfirm.vue'
 const { name } = useDisplay();
 const displaySize = computed(() => {
   switch (name.value) {
@@ -22,19 +27,19 @@ const displaySize = computed(() => {
   }
   return undefined;
 });
+
+let BasePupConfirmInfo = reactive({
+    toggle: true,
+    text: '가상 텍스트',
+    code: null
+})
+
+const movePage = (code) => {
+}
 </script>
 
 <template>
-  <v-app>
-    <Header />
-    <v-main class="container">
-      <div class="ly-inner">
-        <router-view :class="displaySize"></router-view>
-        </div>
-      </v-main>
-      <Footer />
-      <GoTopBtn />
-  </v-app>
+ <AppLogin/>
 </template>
 
 <style scoped>
