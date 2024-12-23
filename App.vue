@@ -4,7 +4,7 @@
 import Header from './components/MainHeader.vue'
 import Footer from './components/MainFooter.vue'
 import GoTopBtn from './components/GoTopBtn.vue'
-import AppMain from './components/AppMain.vue'
+import AppMain from './components/appMain.vue'
 import appLogin from './components/appLogin.vue'
 import { useDisplay } from 'vuetify';
 import { computed, reactive } from 'vue';
@@ -39,7 +39,7 @@ const movePage = (code) => {
 </script>
 
 <template>
- <AppLogin/>
+<AppMain/>
 </template>
 
 <style scoped>
