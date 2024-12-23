@@ -1,9 +1,13 @@
 import { createMemoryHistory, createRouter } from 'vue-router'
 
-import Header from '../components/Login.vue';
+import Login from '../components/appLogin.vue';
+import Main from '../components/appMain.vue';
+import MemType from '../components/MemType.vue';
 
 const routes = [
-  { path: '/', component : Header},   
+  { path: '/', component : Main},   
+  { path: '/login', component : Login}
+
 ]
 
 const router = createRouter({// -> for browser history

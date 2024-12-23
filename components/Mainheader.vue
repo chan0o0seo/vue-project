@@ -19,7 +19,7 @@ const handleMouseLeave = () => {
               </button>
               <ul>
                   <li>
-                      <RouterLink >로그인</RouterLink>
+                      <RouterLink to="/login">로그인</RouterLink>
                   </li>
                   <li>
                       <RouterLink >회원가입</RouterLink>
@@ -31,8 +31,8 @@ const handleMouseLeave = () => {
           </div>
           <div class="gnb-wrap">
               <h1 class="logo-title">
-                  <RouterLink 
-                      ><img alt="" class="logo" src="../assets/logo/icon.png" /></RouterLink>
+                  <RouterLink to="/">
+                      <img alt="" class="logo" src="../assets/logo/icon.png" /></RouterLink>
               </h1>
               <nav  :class="show ? 'active' : ''" class="gnb-menu" @click="show = true" @mouseleave="handleMouseLeave">
                   <ul class="menu-list">
@@ -108,7 +108,7 @@ const handleMouseLeave = () => {
               <!-- util -->
               <div class="util-area">
                   <v-btn
-                    to="/my"
+                    to="/login"
                       size="x-small"
                       title="MY"
                       variant="text"
