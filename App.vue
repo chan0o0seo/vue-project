@@ -6,9 +6,14 @@ import Footer from './components/MainFooter.vue'
 import GoTopBtn from './components/GoTopBtn.vue'
 import AppMain from './components/appMain.vue'
 import appLogin from './components/appLogin.vue'
+import MainKeyVsl from './components/MainKeyvsl.vue'
+import ApisProdDetl from './components/ApisProdDetl.vue'
 import { useDisplay } from 'vuetify';
 import { computed, reactive } from 'vue';
-import SingupView from './views/SingupView.vue'
+import AppLogin from './components/appLogin.vue'
+import BasePupAlert from './base/BasePupAlert.vue'
+import BasePupConfirm from './base/BasePupConfirm.vue'
+
 const { name } = useDisplay();
 const displaySize = computed(() => {
   switch (name.value) {
@@ -37,7 +42,9 @@ const movePage = (code) => {
 </script>
 
 <template>
-  <SingupView></SingupView>
+<ApisProdDetl>
+  
+</ApisProdDetl>
 </template>
 
 <style scoped>
