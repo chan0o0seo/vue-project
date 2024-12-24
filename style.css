@@ -1,4 +1,7 @@
-
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo.css');
+ @import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+                
 html {
   font-family: Inter var;
   line-height: 1.5;
@@ -30,10 +33,11 @@ body {
 }
 
 body, input, textarea, select, button, table, pre {
-  font-weight: 400;
-  color: #111518;
-  line-height: 1.5;
-  letter-spacing: normal;
+    font-family: Spoqa Han Sans Neo,Noto Sans KR,Malgun Gothic,맑은 고딕,돋움,dotum,Apple SD Gothic Neo,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    font-weight: 400;
+    color: #111518;
+    line-height: 1.5;
+    letter-spacing: normal;
 }
 body, div, p, span, h1, h2, h3, h4, h5, h6, a, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select, label, header, footer, main, article, aside, section, address {
   margin: 0;
