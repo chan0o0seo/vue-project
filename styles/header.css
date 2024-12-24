@@ -66,16 +66,16 @@ v-btn {
   display: flex;
   align-items: center;
   height: 8rem;
-  font-size: 2rem;
+  font-size: 3.2rem;
   font-weight: 500;
 }
 .gnb-wrap .menu-list li:not(:first-child) a {
-  margin-left: 10rem;
+  margin-left: 11rem;
   padding: 2.5rem 2.8rem;
   display: flex;
   align-items: center;
   height: 8rem;
-  font-size: 2rem;
+  font-size: 3.2rem;
   font-weight: 500;
 }
 .logo-title a {
